@@ -20,6 +20,8 @@ ul#filter {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
 
+  li { cursor: pointer; }
+
   li.active {
     &:nth-child(1) {
       color: #333;

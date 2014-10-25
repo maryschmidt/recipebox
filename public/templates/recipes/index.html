@@ -5,11 +5,11 @@
 <section id="main">
 <div class="filter-container">
   <ul id="filter">
-    <li class="active" ng-click="filters.category_name = ''">All recipes</li>
-    <li class="" ng-click="filters.category_name = 'brunch'">Brunch</li>
-    <li class="" ng-click="filters.category_name = 'dinner'">Dinner</li>
-    <li class="" ng-click="filters.category_name = 'seasonal'">Seasonal</li>
-    <li class="" ng-click="filters.category_name = 'snacks'">Snacks!</li>
+    <li ng-class="{'active':filters.category_name === ''}" ng-click="filters.category_name = ''">All recipes</li>
+    <li ng-class="{'active':filters.category_name  === 'brunch'}" ng-click="filters.category_name = 'brunch'">Brunch</li>
+    <li ng-class="{'active':filters.category_name  === 'dinner'}" ng-click="filters.category_name = 'dinner'">Dinner</li>
+    <li ng-class="{'active':filters.category_name  === 'seasonal'}" ng-click="filters.category_name = 'seasonal'">Seasonal</li>
+    <li ng-class="{'active':filters.category_name  === 'snacks'}" ng-click="filters.category_name = 'snacks'">Snacks!</li>
   </ul>
 </div>
 
