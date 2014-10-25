@@ -2,7 +2,7 @@ Category.create([
   { name: "brunch" },
   { name: "dinner" },
   { name: "seasonal" },
-  { name: "snacks!" },
+  { name: "snacks" },
 ])
 
 Recipe.create([
@@ -14,12 +14,12 @@ Recipe.create([
   {
     name: "Snickerdoodles",
     description: "Magic cookies",
-    category_id: Category.where(name: 'snacks!').first.id
+    category_id: Category.where(name: 'snacks').first.id
   },
   {
     name: "Rice Krispies",
     description: "Buttery deliciousness",
-    category_id: Category.where(name: 'snacks!').first.id
+    category_id: Category.where(name: 'snacks').first.id
   },
   {
     name: "Enchiladas",

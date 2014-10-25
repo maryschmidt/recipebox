@@ -14,7 +14,7 @@
 </div>
 
 <div class="recipes-container">
-  <div ng-repeat="recipe in recipes" ng-click="viewRecipe(recipe.id)" class="index-project">
+  <div ng-repeat="recipe in recipes" ng-click="viewRecipe(recipe.id)" class="index-recipe {{recipe.category_name}}">
     <div class="index-name">{{ recipe.name }}</div>
     <div class="index-description">{{ recipe.description }}</div>
   </div>

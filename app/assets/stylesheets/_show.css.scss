@@ -7,6 +7,22 @@
   background-color: #fff;
   padding: 50px;
   box-sizing: border-box;
+
+  &.brunch {
+    border-top: 5px solid $accent_color_2;
+  }
+
+  &.dinner {
+    border-top: 5px solid $accent_color_1;
+  }
+
+  &.seasonal {
+    border-top: 5px solid $accent_color_3;
+  }
+
+  &.snacks {
+    border-top: 5px solid $accent_color_4;
+  }
 }
 
 .show-name {
