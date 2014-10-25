@@ -17,6 +17,43 @@
 ul#filter {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
+
+  li.active {
+    &:nth-child(1) {
+      color: $accent_color_1;
+      &:before {
+        background-color: $accent_color_1;
+      }
+    }
+
+    &:nth-child(2) {
+      color: $accent_color_2;
+      &:before {
+        background-color: $accent_color_2;
+      }
+    }
+
+    &:nth-child(3) {
+      color: $accent_color_3;
+      &:before {
+        background-color: $accent_color_3;
+      }
+    }
+
+    &:nth-child(4) {
+      color: $accent_color_4;
+      &:before {
+        background-color: $accent_color_4;
+      }
+    }
+
+    &:nth-child(5) {
+      color: $accent_color_1;
+      &:before {
+        background-color: $accent_color_1;
+      }
+    }
+  }
 }
 
 .recipes-container {
@@ -52,5 +89,10 @@ ul#filter {
 
   &:nth-child(4n) {
     border-left: 5px solid $accent_color_4;
+  }
+
+  .index-name {
+    font-size: 1.35em;
+    margin-bottom: .5em;
   }
 }
