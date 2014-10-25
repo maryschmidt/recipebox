@@ -2,6 +2,7 @@
   $scope.recipes = []
 
   $http.get('./recipes.json').success((data) ->
+    $scope.filters = { }
     $scope.recipes = data
   )
 

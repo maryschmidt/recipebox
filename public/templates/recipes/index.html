@@ -5,16 +5,16 @@
 <section id="main">
 <div class="filter-container">
   <ul id="filter">
-    <li class="active">All recipes</li>
-    <li class="">Brunch</li>
-    <li class="">Dinner</li>
-    <li class="">Seasonal</li>
-    <li class="">Snacks!</li>
+    <li class="active" ng-click="filters.category_name = ''">All recipes</li>
+    <li class="" ng-click="filters.category_name = 'brunch'">Brunch</li>
+    <li class="" ng-click="filters.category_name = 'dinner'">Dinner</li>
+    <li class="" ng-click="filters.category_name = 'seasonal'">Seasonal</li>
+    <li class="" ng-click="filters.category_name = 'snacks'">Snacks!</li>
   </ul>
 </div>
 
 <div class="recipes-container">
-  <div ng-repeat="recipe in recipes" ng-click="viewRecipe(recipe.id)" class="index-recipe {{recipe.category_name}}">
+  <div ng-repeat="recipe in recipes | filter:filters" ng-click="viewRecipe(recipe.id)" class="index-recipe {{recipe.category_name}}">
     <div class="index-name">{{ recipe.name }}</div>
     <div class="index-description">{{ recipe.description }}</div>
   </div>
