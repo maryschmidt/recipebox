@@ -1,10 +1,18 @@
-Recipebox
+[Mary Food](https://maryfood.herokuapp.com/)
 =========
 
-Getting Started
+What is this?
 ---------------
 
-This repository comes equipped with a self-setup script!
+This is me learning [AngularJS](https://angularjs.org/)!
+
+I threw together this little recipe book app to see how Angular and Rails play together.  I like it!
+
+
+Running locally
+---------------
+
+To setup the app:
 
     % ./bin/setup
 
@@ -13,13 +21,3 @@ After setting up, you can run the application using [foreman]:
     % foreman start
 
 [foreman]: http://ddollar.github.io/foreman/
-
-Guidelines
-----------
-
-Use the following guides for getting things done, programming well, and
-programming in style.
-
-* [Protocol](http://github.com/thoughtbot/guides/blob/master/protocol)
-* [Best Practices](http://github.com/thoughtbot/guides/blob/master/best-practices)
-* [Style](http://github.com/thoughtbot/guides/blob/master/style)
