@@ -1,0 +1,30 @@
+.recipes-container {
+  margin: 136px 0 0 0;
+}
+
+.index-project {
+  margin: 30px auto;
+  max-width: 68.5em;
+  vertical-align: middle;
+  width: 100%;
+  box-sizing: border-box;
+  border-left: 5px solid #e6e6e6;
+  padding: 20px;
+  background-color: #fff;
+
+  &:nth-child(1n) {
+    border-left: 5px solid $accent_color_1;
+  }
+
+  &:nth-child(2n) {
+    border-left: 5px solid $accent_color_2;
+  }
+
+  &:nth-child(3n) {
+    border-left: 5px solid $accent_color_3;
+  }
+
+  &:nth-child(4n) {
+    border-left: 5px solid $accent_color_4;
+  }
+}

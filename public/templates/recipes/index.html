@@ -1,4 +1,10 @@
-<a href="/#">index</a>
-<ul ng-repeat="recipe in recipes">
-  <li><a ng-click="viewRecipe(recipe.id)">{{ recipe.name }}</a></li>
-</ul>
+<section id="header">
+<h1 class="title"><a href="/">RecipeBox</a></h1>
+</section>
+
+<div class="recipes-container">
+  <div ng-repeat="recipe in recipes" ng-click="viewRecipe(recipe.id)" class="index-project">
+    <div class="index-name">{{ recipe.name }}</div>
+    <div class="index-description">{{ recipe.description }}</div>
+  </div>
+</div>
