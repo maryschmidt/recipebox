@@ -1,5 +1,27 @@
+#main {
+  width: 1000px;
+  margin-top: 136px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter-container {
+  width: 275px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+ul#filter {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
 .recipes-container {
-  margin: 136px 0 0 0;
+  width: 700px;
+  display: inline-block;
 }
 
 .index-project {
@@ -11,6 +33,10 @@
   border-left: 5px solid #e6e6e6;
   padding: 20px;
   background-color: #fff;
+
+  &:first-child {
+    margin-top: 0;
+  }
 
   &:nth-child(1n) {
     border-left: 5px solid $accent_color_1;
