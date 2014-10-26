@@ -19,7 +19,3 @@
       controller: 'RecipeIndexCtrl'
     })
 ])
-
-@recipebox.filter 'markdown', ($sce) ->
-  return (val) ->
-    $sce.trustAsHtml(val)
