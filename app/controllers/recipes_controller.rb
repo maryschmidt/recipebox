@@ -15,7 +15,8 @@ class RecipesController < ApplicationController
 
   # GET /recipes/new
   def new
-    @recipe = Recipe.new
+    @categories = Category.all
+    respond_with(@categories, each_serializer: CategorySerializer, root: false)
   end
 
   # GET /recipes/1/edit
@@ -56,6 +57,6 @@ class RecipesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def recipe_params
-      params.require(:recipe).permit(:name)
+      params.require(:recipe).permit(:name, :description, :body, :category_id)
     end
 end

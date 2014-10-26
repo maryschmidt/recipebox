@@ -6,6 +6,10 @@
       templateUrl: '../templates/recipes/index.html',
       controller: 'RecipeIndexCtrl'
     }).
+    when('/recipes/new', {
+      templateUrl: '../templates/recipes/new.html',
+      controller: 'RecipeNewCtrl'
+    }).
     when('/recipes/:id', {
       templateUrl: '../templates/recipes/show.html',
       controller: 'RecipeShowCtrl'

@@ -1,0 +1,17 @@
+<section id="header">
+<h1 class="title"><a href="/">Mary Food</a></h1>
+</section>
+
+<section id="main">
+<div class="recipe-container">
+  <form>
+    <input type="text" placeholder="Name" ng-model="recipeName" />
+
+    <select name="category" ng-model="categoryId">
+      <option ng-repeat="category in categories" value="{{category.id}}">{{category.name}}</option>
+    </select>
+
+    <div class="positive" ng-click="createRecipe()">Create</div>
+  </form>
+</div>
+</section>
