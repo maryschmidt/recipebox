@@ -7,6 +7,10 @@
   <form>
     <input type="text" placeholder="Name" ng-model="recipeName" />
 
+    <input type="text" placeholder="Description" ng-model="recipeDescription" />
+
+    <textarea placeholder="So how do you make it?" ng-model="recipeBody" />
+
     <select name="category" ng-model="categoryId">
       <option ng-repeat="category in categories" value="{{category.id}}">{{category.name}}</option>
     </select>
