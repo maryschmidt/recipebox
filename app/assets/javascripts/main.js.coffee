@@ -1,4 +1,4 @@
-@recipebox = angular.module('recipebox', [])
+@recipebox = angular.module('recipebox', ['ngRoute'])
 
 @recipebox.config(['$routeProvider', ($routeProvider) ->
   $routeProvider.
@@ -15,3 +15,7 @@
       controller: 'RecipeIndexCtrl'
     })
 ])
+
+@recipebox.filter 'markdown', ($sce) ->
+  return (val) ->
+    $sce.trustAsHtml(val)

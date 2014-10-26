@@ -8,6 +8,6 @@
 
   <div class="show-description">{{recipe.description}}</div>
 
-  <div class="show-steps">{{recipe.body}}</div>
+  <div ng-bind-html="recipe.body | markdown"></div>
 </div>
 </section>

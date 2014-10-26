@@ -91,6 +91,7 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.1)
     kgio (2.8.1)
+    kramdown (1.5.0)
     launchy (2.4.2)
       addressable (~> 2.3)
     mail (2.5.4)
@@ -210,6 +211,7 @@ DEPENDENCIES
   foreman
   high_voltage
   jquery-rails
+  kramdown
   launchy
   neat
   newrelic_rpm (>= 3.6.7)
