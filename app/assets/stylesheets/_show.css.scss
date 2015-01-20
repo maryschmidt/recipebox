@@ -23,6 +23,15 @@
   &.snacks {
     border-top: 5px solid $accent_color_4;
   }
+
+  h2 {
+    font-size: 1.25em;
+    margin-bottom: 0.75em;
+  }
+
+  ul {
+    margin-left: 0;
+  }
 }
 
 .show-name {
