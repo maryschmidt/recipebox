@@ -45,13 +45,6 @@ ul#filter {
     }
 
     &:nth-child(4) {
-      color: $accent_color_3;
-      &:before {
-        background-color: $accent_color_3;
-      }
-    }
-
-    &:nth-child(5) {
       color: $accent_color_4;
       &:before {
         background-color: $accent_color_4;
@@ -86,10 +79,6 @@ ul#filter {
 
   &.dinner {
     border-left: 5px solid $accent_color_1;
-  }
-
-  &.seasonal {
-    border-left: 5px solid $accent_color_3;
   }
 
   &.snacks {
